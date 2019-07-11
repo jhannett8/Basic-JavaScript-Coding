@@ -64,8 +64,6 @@
 				<br><br> In May of 2017, I had graduated Summa Cum Laude with a degree in biomedical sciences and a minor in chemsitry.  After obtaining some expereince in different facets of the biomedical industry, I had decided to change career paths and follow my passion for software development.   
 				<br><br>I am a current student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, providing me with training and experience in HTML, CSS, JavaScript, Python, SQL, C# and more. 
 				<br><br>By the end of the bootcamp I will be a full-stack developer and would love to work with you on your project. 
-				<a href="#Contact">Contact</a> me below!
-				</p>
 		</div>
 	</div>
 
@@ -103,10 +101,13 @@
 					<label>Email:</label>
 						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
 					<label>Message:</label>
-						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+						<input type="text" id="Message" name="Message" placeholder="Please write your message here">	
 						<input type="submit" value="Submit">
-						
+					<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" id="personalemail" data-content="hannettjoseph@gmail.com">
+							My Email Address
+					</button>
 				</form>
+				
 		</div>
 	</div>
 <!-----/contact---------->
@@ -126,8 +127,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+	<script>
+	$(function () {
+		$('#personalemail').popover({
+		  container: 'body'
+		})
+	  })
+	</script>
+	
+	
+	
 	</body>
 
 </html>
